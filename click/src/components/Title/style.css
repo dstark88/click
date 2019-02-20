@@ -1,0 +1,14 @@
+.titleSection {
+  background-image: url("./images/sand.jpg");
+  background-size: cover;
+  background-size: 100%;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+  font-size: 3rem;
+  color:whitesmoke;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  top: 25px;
+}

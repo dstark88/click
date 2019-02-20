@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "aspen",
+    "image": "../assets/images/aspen.jpg"
+  },
+  {
+    "id": 2,
+    "type": "boatOcean",
+    "image": "../assets/images/boatOcean.jpg"
+  },
+  {
+    "id": 3,
+    "type": "bridge",
+    "image": "../assets/images/bridge.jpg"
+  },
+  {
+    "id": 4,
+    "type": "cave",
+    "image": "../assets/images/cave.jpg"
+  },
+  {
+    "id": 5,
+    "type": "grandCanyon",
+    "image": "../assets/images/grandCanyon.jpg"
+  },
+  {
+    "id": 6,
+    "type": "hurricane",
+    "image": "../assets/images/hurricane.jpg"
+  },
+  {
+    "id": 7,
+    "type": "lavenderDock",
+    "image": "../assets/images/lavenderDock.jpg"
+  },
+  {
+    "id": 8,
+    "type": "lighthouse",
+    "image": "../assets/images/lighthouse.jpg"
+  },
+  {
+    "id": 9,
+    "type": "roadSnowMtn",
+    "image": "../assets/images/roadSnowMtn.jpg"
+  },
+  {
+    "id": 10,
+    "type": "tornado",
+    "image": "../assets/images/tornado.jpg"
+  },
+  {
+    "id": 11,
+    "type": "volcano",
+    "image": "../assets/images/volcano.jpg"
+  },
+  {
+    "id": 12,
+    "type": "waterfall",
+    "image": "../assets/images/waterfall.jpg"
+  }
+]

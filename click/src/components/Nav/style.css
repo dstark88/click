@@ -1,0 +1,27 @@
+.nav-pills {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(127, 177, 156);;
+    min-height: 80px;
+    width: 100%;
+    text-align: right;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.title{
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.score {
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    margin-top: 1%;
+}
