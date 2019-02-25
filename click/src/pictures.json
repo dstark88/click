@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "aspen",
+    "image": "../assets/images/aspen.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 1,
+    "name": "boatOcean",
+    "image": "../assets/images/boatOcean.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 2,
+    "name": "bridge",
+    "image": "../assets/images/bridge.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 3,
+    "name": "cave",
+    "image": "../assets/images/cave.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 4,
+    "name": "grandCanyon",
+    "image": "../assets/images/grandCanyon.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 5,
+    "name": "hurricane",
+    "image": "../assets/images/hurricane.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 6,
+    "name": "lavenderDock",
+    "image": "../assets/images/lavenderDock.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 7,
+    "name": "lighthouse",
+    "image": "../assets/images/lighthouse.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 8,
+    "name": "roadSnowMtn",
+    "image": "../assets/images/roadSnowMtn.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 9,
+    "name": "tornado",
+    "image": "../assets/images/tornado.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 10,
+    "name": "volcano",
+    "image": "../assets/images/volcano.jpg",
+    "beenClicked": false
+  },
+  {
+    "id": 11,
+    "name": "waterfall",
+    "image": "../assets/images/waterfall.jpg",
+    "beenClicked": false
+  }
+]

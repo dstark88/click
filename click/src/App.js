@@ -1,58 +1,95 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-// import _ from "lodash";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from "./components/Nav";
-import NatureCard from "./components/NatureCard";
+import PictureCard from "./components/PictureCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import natures from "./natures.json";
-
-// function App() {
-//   return <Counter />;
-// }
+import Footer from "./components/Footer/index";
+import pictures from "./pictures.json";
 
 class App extends Component {
-  // Setting this.state.natures to the natures json array
+  
   state = {
-    topScore: 0,
-    currentScore: 0,
-    natures: natures,
-    clicked: []
-  };
-
-  removeNature = id => {
-    // Filter this.state.natures for natures with an id not equal to the id being removed
-    const natures = this.state.natures.filter(nature => nature.id !== id);
-    // Set this.state.natures equal to the new natures array
-    this.setState({ natures });
-  };
-
-  // Map over this.state.natures and render a NatureCard component for each nature object
-  render() {
-    return (
-     
-      <Wrapper>
-        <Nav 
-          currentScore={this.state.currentScore}
-          toScore={this.state.topScore}
-        />
-        <Title>Natures List</Title>
-        {this.state.natures.map(nature => (
-          <NatureCard
-            removeNature={this.removeNature}
-            id={nature.id}
-            type={nature.type}
-            image={nature.image}
-          />
-        ))}
-      </Wrapper>
-     
-    );
+    bestScore: 0,
+    score: 0,
+    message: "Click an image!",
+    pictures,
   }
 
-}
+  handleImageClick = (id) => {
+    var clone =this.state.pictures
 
+    for (let i = 0; i < clone.length; i++) {
+      if (clone[i].id === id){
+        if (clone[i].beenClicked === true) {
+          console.log(i, "index of clicked");
+          if (this.state.score > this.state.bestScore) {
+            this.setState({
+              bestScore: this.state.score,
+              pictures: clone
+            });
+          }
+          for (let j = 0; j < clone.length; j++) {
+            clone[j].beenClicked = false;
+          }
+          this.setState({
+            score: 0,
+            pictures: clone,
+          });
+          alert('Sorry you lost');
+        } else {
+          this.setState({
+            score: this.state.score + 1,
+            pictures: clone
+          });
+          if (this.state.score === 11) {
+            this.setState({
+              bestScore: 12,
+              pictures: clone
+            });
+            for (let j = 0; j < clone.length; j++) {
+              clone[j].beenClicked = false;
+            }
+            this.setState({
+              score: 0,
+              pictures: clone,
+            });
+            alert('Wow! You are a master at memory games!');
+          }
+          clone[i].beenClicked = true;
+        }
+        break;
+      } 
+    }
+    clone = clone.sort(() => Math.random() - 0.5);
+  }
+
+  render() {
+    return (
+    <div>
+        <Nav
+          message={this.state.message} 
+          score={this.state.score}
+          bestScore={this.state.bestScore}
+        />
+        <Wrapper>
+        <Title></Title>
+          {this.state.pictures.map(picture => (
+            <PictureCard
+              key={picture.id}
+              id={picture.id}
+              name={picture.name}
+              image={picture.image}
+              handleImageClick={this.handleImageClick}
+            />
+            ))
+          }
+      </Wrapper>
+      <Footer />
+    </div>
+    )
+  };
+};
 
 export default App;
 

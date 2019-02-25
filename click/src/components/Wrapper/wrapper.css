@@ -1,0 +1,13 @@
+.wrapper {
+
+    background: url("../../images/sand.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+}
+
