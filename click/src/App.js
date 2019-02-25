@@ -12,7 +12,7 @@ class App extends Component {
   state = {
     bestScore: 0,
     score: 0,
-    message: "Click an image!",
+    message: "Click an image to begin!",
     pictures,
   }
 
@@ -26,7 +26,8 @@ class App extends Component {
           if (this.state.score > this.state.bestScore) {
             this.setState({
               bestScore: this.state.score,
-              pictures: clone
+              pictures: clone,
+              message: "Sorry, you clicked incorrectly. Start Over!",
             });
           }
           for (let j = 0; j < clone.length; j++) {
@@ -34,18 +35,19 @@ class App extends Component {
           }
           this.setState({
             score: 0,
-            pictures: clone,
+            pictures: clone
           });
-          alert('Sorry you lost');
         } else {
           this.setState({
             score: this.state.score + 1,
-            pictures: clone
+            pictures: clone,
+            message: "You clicked correctly. Keep clicking!"
           });
           if (this.state.score === 11) {
             this.setState({
               bestScore: 12,
-              pictures: clone
+              pictures: clone,
+              message:"Wow! You are a master at memory games!"
             });
             for (let j = 0; j < clone.length; j++) {
               clone[j].beenClicked = false;
@@ -54,7 +56,6 @@ class App extends Component {
               score: 0,
               pictures: clone,
             });
-            alert('Wow! You are a master at memory games!');
           }
           clone[i].beenClicked = true;
         }
