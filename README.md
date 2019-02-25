@@ -1,9 +1,12 @@
 # click
-react #1 assignment
+##react #1 assignment
 
-Create a new React application using Create React App.
-The application should render different images (of your choice) to the screen. Each image should listen for click events.
-The application should keep track of the user's score. The user's score should be incremented when clicking an image for the first time. The user's score should be reset to 0 if they click the same image more than once.
-Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.
-Once the user's score is reset after an incorrect guess, the game should restart.
-When complete, the application should be deployed to Github Pages. See the README generated with Create React App for instructions on deploying the application to Github Pages.
+#GitHub repo page
+##https://github.com/dstark88/click
+
+#Deployed page
+##
+
+I created a React.js application using Create-React-App.
+This application renders 12 different images of nature on the screen. Each image listens for a click event. On click the application checks to see if the picture has been clicked before or not. It the image has not been clicked on the user gets one point and the images randomly shuffle. If the image has been clicked on the user loses and their score is checked aginst their best score. If the new score is higher the best score is updated. If not the best score remains the same. The user is trying to get all 12 images clicked without clicking one a second time. 
+
