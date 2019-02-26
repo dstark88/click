@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "aspen",
-    "image": "../src/images/aspen.jpg",
+    "image": "../assets/images/aspen.jpg",
     "beenClicked": false
   },
   {
